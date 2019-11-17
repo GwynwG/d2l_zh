@@ -1,0 +1,11 @@
+conda env update -f environment.yml
+pip install --pre mxnet-cu75
+
+
+conda activate gluon
+
+jupyter notebook
+
+
+import os
+os.environ['MXNET_GLUON_REPO'] = 'https://apache-mxnet.s3.cn-north-1.amazonaws.com.cn/'
